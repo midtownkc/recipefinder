@@ -1,6 +1,6 @@
 class RecipesControllerController < ApplicationController
   def index
-    if params[:search].blank?
-      params[:search] = "chocolate"
+    @search_term = params[:search] || 'chocolate'
+    @recipes_list = Recipe.for(@search_term)
   end
 end
