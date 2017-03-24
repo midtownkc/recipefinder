@@ -2982,3 +2982,33 @@ Completed 200 OK in 931ms (Views: 155.1ms | ActiveRecord: 0.0ms)
   [1m[36m (34.6ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL) [0m
   [1m[35m (12.1ms)[0m  CREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")
   [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/" for ::1 at 2017-03-24 17:06:00 -0500
+Processing by RecipesControllerController#index as HTML
+  Rendered recipes_controller/index.html.erb within layouts/application (20.7ms)
+Completed 200 OK in 931ms (Views: 281.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-03-24 17:06:01 -0500
+Processing by RecipesControllerController#index as HTML
+  Rendered recipes_controller/index.html.erb within layouts/application (10.1ms)
+Completed 200 OK in 764ms (Views: 37.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/recipes_controller.self-692b77ff4074cc8ca04cfb29a0b69d8c76168873b404b3bcd808aeff691747e0.css?body=1" for ::1 at 2017-03-24 17:06:02 -0500
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2017-03-24 17:06:02 -0500
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for ::1 at 2017-03-24 17:06:02 -0500
+
+
+Started GET "/assets/recipes_controller.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-03-24 17:06:02 -0500
+
+
+Started GET "/" for ::1 at 2017-03-24 17:06:09 -0500
+Processing by RecipesControllerController#index as HTML
+  Rendered recipes_controller/index.html.erb within layouts/application (10.1ms)
+Completed 200 OK in 690ms (Views: 23.3ms | ActiveRecord: 0.0ms)
