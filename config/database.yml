@@ -13,6 +13,7 @@ development:
   adapter: postgresql
   pool: 5
   database: recipe_development
+  timeout: 5000
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
@@ -21,8 +22,10 @@ test:
   adapter: postgresql
   pool: 5
   database: testerlester
+  timeout: 5000
 
 production:
   adapter: postgresql
   pool: 5
   database: heroku-postgresql
+  timeout: 5000
