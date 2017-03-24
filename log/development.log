@@ -2979,3 +2979,6 @@ Started GET "/" for ::1 at 2017-03-24 16:18:34 -0500
 Processing by RecipesControllerController#index as HTML
   Rendered recipes_controller/index.html.erb within layouts/application (85.4ms)
 Completed 200 OK in 931ms (Views: 155.1ms | ActiveRecord: 0.0ms)
+  [1m[36m (34.6ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL) [0m
+  [1m[35m (12.1ms)[0m  CREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
