@@ -2807,208 +2807,361 @@ Processing by RecipesControllerController#index as HTML
 Completed 200 OK in 607ms (Views: 15.9ms | ActiveRecord: 0.0ms)
 
 
-Started GET "/?search=mocha" for ::1 at 2017-03-24 15:14:00 -0500
+Started GET "/" for ::1 at 2017-04-16 21:28:28 -0500
 Processing by RecipesControllerController#index as HTML
-  Parameters: {"search"=>"mocha"}
-  Rendered recipes_controller/index.html.erb within layouts/application (22.8ms)
-Completed 200 OK in 1487ms (Views: 534.8ms | ActiveRecord: 0.0ms)
+  Rendered recipes_controller/index.html.erb within layouts/application (0.9ms)
+Completed 500 Internal Server Error in 637ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/Users/imax/code/ruby/recipefinder/app/views/recipes_controller/index.html.erb:27: syntax error, unexpected '=', expecting keyword_end
+... are no recipes for '.freeze; = params[:search] ;@output_buf...
+...                               ^
+/Users/imax/code/ruby/recipefinder/app/views/recipes_controller/index.html.erb:31: syntax error, unexpected keyword_ensure, expecting keyword_end
+/Users/imax/code/ruby/recipefinder/app/views/recipes_controller/index.html.erb:33: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/views/recipes_controller/index.html.erb:27: syntax error, unexpected '=', expecting keyword_end
+  app/views/recipes_controller/index.html.erb:31: syntax error, unexpected keyword_ensure, expecting keyword_end
+  app/views/recipes_controller/index.html.erb:33: syntax error, unexpected end-of-input, expecting keyword_end
 
 
-Started GET "/assets/recipes_controller.self-692b77ff4074cc8ca04cfb29a0b69d8c76168873b404b3bcd808aeff691747e0.css?body=1" for ::1 at 2017-03-24 15:14:02 -0500
+  Rendered /Users/imax/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.3ms)
+  Rendered /Users/imax/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /Users/imax/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /Users/imax/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (51.9ms)
+  Rendered /Users/imax/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/imax/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/imax/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/imax/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/imax/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (52.8ms)
+  Rendered /Users/imax/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/imax/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/imax/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (112.2ms)
 
 
-Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2017-03-24 15:14:02 -0500
-
-
-Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for ::1 at 2017-03-24 15:14:02 -0500
-
-
-Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for ::1 at 2017-03-24 15:14:02 -0500
-
-
-Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for ::1 at 2017-03-24 15:14:02 -0500
-
-
-Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2017-03-24 15:14:02 -0500
-
-
-Started GET "/assets/recipes_controller.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-03-24 15:14:02 -0500
-
-
-Started GET "/" for ::1 at 2017-03-24 15:14:03 -0500
-Processing by RecipesControllerController#index as HTML
-  Rendered recipes_controller/index.html.erb within layouts/application (12.7ms)
-Completed 200 OK in 649ms (Views: 33.1ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/" for ::1 at 2017-03-24 15:14:04 -0500
+Started GET "/" for ::1 at 2017-04-16 21:28:51 -0500
 Processing by RecipesControllerController#index as HTML
   Rendered recipes_controller/index.html.erb within layouts/application (8.8ms)
-Completed 200 OK in 822ms (Views: 21.6ms | ActiveRecord: 0.0ms)
+Completed 500 Internal Server Error in 607ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined local variable or method `recipes_path' for #<#<Class:0x007fd5bf02fc28>:0x007fd5bfc1fe98>):
+    1: <h1>Recipe Search results for: "<%= @search_term %>"</h1>
+    2: 
+    3: <%= form_tag(recipes_path, :method => "get", id: "search-form") do %>
+    4: <%= text_field_tag :search, params[:search], placeholder: "Search Recipes" %>
+    5: <%= submit_tag "Search" %>
+    6: <% end %>
+  app/views/recipes_controller/index.html.erb:3:in `_app_views_recipes_controller_index_html_erb__2030256808343102972_70278010957760'
 
 
-Started GET "/" for ::1 at 2017-03-24 15:14:05 -0500
+  Rendered /Users/imax/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.8ms)
+  Rendered /Users/imax/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /Users/imax/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /Users/imax/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (44.6ms)
+  Rendered /Users/imax/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/imax/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/imax/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/imax/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/imax/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (39.2ms)
+  Rendered /Users/imax/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/imax/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/imax/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (94.3ms)
+
+
+Started GET "/" for ::1 at 2017-04-16 21:29:19 -0500
 Processing by RecipesControllerController#index as HTML
   Rendered recipes_controller/index.html.erb within layouts/application (8.3ms)
-Completed 200 OK in 625ms (Views: 20.6ms | ActiveRecord: 0.0ms)
+Completed 500 Internal Server Error in 641ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined local variable or method `recipes_controller_path' for #<#<Class:0x007fd5bf02fc28>:0x007fd5c4a13e88>):
+    1: <h1>Recipe Search results for: "<%= @search_term %>"</h1>
+    2: 
+    3: <%= form_tag(recipes_controller_path, :method => "get", id: "search-form") do %>
+    4: <%= text_field_tag :search, params[:search], placeholder: "Search Recipes" %>
+    5: <%= submit_tag "Search" %>
+    6: <% end %>
+  app/views/recipes_controller/index.html.erb:3:in `_app_views_recipes_controller_index_html_erb__2030256808343102972_70278051829020'
+
+
+  Rendered /Users/imax/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.8ms)
+  Rendered /Users/imax/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /Users/imax/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/imax/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (45.4ms)
+  Rendered /Users/imax/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/imax/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/imax/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/imax/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/imax/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (39.8ms)
+  Rendered /Users/imax/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/imax/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/imax/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (96.6ms)
+
+
+Started GET "/" for ::1 at 2017-04-16 21:33:54 -0500
+Processing by RecipesController#index as HTML
+  Rendered recipes/index.html.erb within layouts/application (10.5ms)
+Completed 500 Internal Server Error in 694ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined local variable or method `recipes_path' for #<#<Class:0x007fdc3989d218>:0x007fdc38845a28>):
+    1: <h1>Recipe Search results for: "<%= @search_term %>"</h1>
+    2: 
+    3: <%= form_tag(recipes_path, :method => "get", id: "search-form") do %>
+    4: <%= text_field_tag :search, params[:search], placeholder: "Search Recipes" %>
+    5: <%= submit_tag "Search" %>
+    6: <% end %>
+  app/views/recipes/index.html.erb:3:in `_app_views_recipes_index_html_erb__1281158671512015344_70291907435160'
+
+
+  Rendered /Users/imax/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.4ms)
+  Rendered /Users/imax/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /Users/imax/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /Users/imax/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (46.5ms)
+  Rendered /Users/imax/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/imax/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/imax/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/imax/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/imax/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (46.0ms)
+  Rendered /Users/imax/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/imax/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/imax/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (100.6ms)
+
+
+Started GET "/" for ::1 at 2017-04-16 21:35:06 -0500
+Processing by RecipesController#index as HTML
+  Rendered recipes/index.html.erb within layouts/application (7.6ms)
+Completed 500 Internal Server Error in 585ms (ActiveRecord: 0.0ms)
 
+ActionView::Template::Error (undefined local variable or method `recipes_index' for #<#<Class:0x007fdc3989d218>:0x007fdc3a5afdc0>):
+    1: <h1>Recipe Search results for: "<%= @search_term %>"</h1>
+    2: 
+    3: <%= form_tag(recipes_index, :method => "get", id: "search-form") do %>
+    4: <%= text_field_tag :search, params[:search], placeholder: "Search Recipes" %>
+    5: <%= submit_tag "Search" %>
+    6: <% end %>
+  app/views/recipes/index.html.erb:3:in `_app_views_recipes_index_html_erb__1281158671512015344_70291924284040'
 
-Started GET "/" for ::1 at 2017-03-24 15:14:06 -0500
-Processing by RecipesControllerController#index as HTML
-  Rendered recipes_controller/index.html.erb within layouts/application (8.4ms)
-Completed 200 OK in 1034ms (Views: 20.7ms | ActiveRecord: 0.0ms)
 
+  Rendered /Users/imax/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.8ms)
+  Rendered /Users/imax/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /Users/imax/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /Users/imax/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (44.1ms)
+  Rendered /Users/imax/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/imax/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/imax/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/imax/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/imax/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (37.4ms)
+  Rendered /Users/imax/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/imax/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/imax/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (83.1ms)
 
-Started GET "/" for ::1 at 2017-03-24 15:14:07 -0500
-Processing by RecipesControllerController#index as HTML
-  Rendered recipes_controller/index.html.erb within layouts/application (10.0ms)
-Completed 200 OK in 1740ms (Views: 23.3ms | ActiveRecord: 0.0ms)
 
+Started GET "/" for ::1 at 2017-04-16 21:35:13 -0500
+Processing by RecipesController#index as HTML
+  Rendered recipes/index.html.erb within layouts/application (7.2ms)
+Completed 500 Internal Server Error in 619ms (ActiveRecord: 0.0ms)
 
-Started GET "/?search=mocha" for ::1 at 2017-03-24 15:17:23 -0500
-Processing by RecipesControllerController#index as HTML
-  Parameters: {"search"=>"mocha"}
-  Rendered recipes_controller/index.html.erb within layouts/application (13.3ms)
-Completed 200 OK in 1854ms (Views: 256.0ms | ActiveRecord: 0.0ms)
+ActionView::Template::Error (undefined local variable or method `recipes_index' for #<#<Class:0x007fdc3989d218>:0x007fdc38c2df28>):
+    1: <h1>Recipe Search results for: "<%= @search_term %>"</h1>
+    2: 
+    3: <%= form_tag(recipes_index, :method => "get", id: "search-form") do %>
+    4: <%= text_field_tag :search, params[:search], placeholder: "Search Recipes" %>
+    5: <%= submit_tag "Search" %>
+    6: <% end %>
+  app/views/recipes/index.html.erb:3:in `_app_views_recipes_index_html_erb__1281158671512015344_70291924284040'
 
 
-Started GET "/assets/recipes_controller.self-692b77ff4074cc8ca04cfb29a0b69d8c76168873b404b3bcd808aeff691747e0.css?body=1" for ::1 at 2017-03-24 15:17:25 -0500
+  Rendered /Users/imax/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.2ms)
+  Rendered /Users/imax/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /Users/imax/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /Users/imax/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (43.8ms)
+  Rendered /Users/imax/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/imax/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/imax/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/imax/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/imax/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (37.0ms)
+  Rendered /Users/imax/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/imax/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/imax/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (82.9ms)
 
 
-Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2017-03-24 15:17:25 -0500
+Started GET "/" for ::1 at 2017-04-16 21:35:22 -0500
+Processing by RecipesController#index as HTML
+  Rendered recipes/index.html.erb within layouts/application (85.6ms)
+Completed 200 OK in 891ms (Views: 300.6ms | ActiveRecord: 0.0ms)
 
 
-Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for ::1 at 2017-03-24 15:17:25 -0500
+Started GET "/assets/recipes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-04-16 21:35:23 -0500
 
 
-Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for ::1 at 2017-03-24 15:17:25 -0500
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2017-04-16 21:35:23 -0500
 
 
-Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for ::1 at 2017-03-24 15:17:25 -0500
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2017-04-16 21:35:23 -0500
 
 
-Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2017-03-24 15:17:25 -0500
+Started GET "/assets/recipes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-04-16 21:35:23 -0500
 
 
-Started GET "/assets/recipes_controller.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-03-24 15:17:25 -0500
+Started GET "/recipes/index?utf8=%E2%9C%93&search=Cheese&commit=Search" for ::1 at 2017-04-16 21:35:29 -0500
+Processing by RecipesController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"Cheese", "commit"=>"Search"}
+  Rendered recipes/index.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 691ms (Views: 13.5ms | ActiveRecord: 0.0ms)
 
 
-Started GET "/" for ::1 at 2017-03-24 15:17:26 -0500
-Processing by RecipesControllerController#index as HTML
-  Rendered recipes_controller/index.html.erb within layouts/application (8.8ms)
-Completed 200 OK in 925ms (Views: 21.6ms | ActiveRecord: 0.0ms)
+Started GET "/" for ::1 at 2017-04-16 21:35:33 -0500
+Processing by RecipesController#index as HTML
+  Rendered recipes/index.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 587ms (Views: 14.9ms | ActiveRecord: 0.0ms)
 
 
-Started GET "/" for ::1 at 2017-03-24 15:17:27 -0500
-Processing by RecipesControllerController#index as HTML
-  Rendered recipes_controller/index.html.erb within layouts/application (8.9ms)
-Completed 200 OK in 934ms (Views: 22.5ms | ActiveRecord: 0.0ms)
+Started GET "/" for ::1 at 2017-04-16 21:36:57 -0500
+Processing by RecipesController#index as HTML
+  Rendered recipes/index.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 991ms (Views: 15.7ms | ActiveRecord: 0.0ms)
 
 
-Started GET "/" for ::1 at 2017-03-24 15:17:29 -0500
-Processing by RecipesControllerController#index as HTML
-  Rendered recipes_controller/index.html.erb within layouts/application (8.8ms)
-Completed 200 OK in 948ms (Views: 20.9ms | ActiveRecord: 0.0ms)
+Started GET "/assets/recipes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-04-16 21:36:58 -0500
 
 
-Started GET "/" for ::1 at 2017-03-24 15:17:30 -0500
-Processing by RecipesControllerController#index as HTML
-  Rendered recipes_controller/index.html.erb within layouts/application (9.0ms)
-Completed 200 OK in 736ms (Views: 21.6ms | ActiveRecord: 0.0ms)
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2017-04-16 21:36:58 -0500
 
 
-Started GET "/" for ::1 at 2017-03-24 15:17:30 -0500
-Processing by RecipesControllerController#index as HTML
-  Rendered recipes_controller/index.html.erb within layouts/application (8.9ms)
-Completed 200 OK in 769ms (Views: 21.3ms | ActiveRecord: 0.0ms)
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for ::1 at 2017-04-16 21:36:58 -0500
 
 
-Started GET "/?search=mocha" for ::1 at 2017-03-24 16:18:25 -0500
-Processing by RecipesControllerController#index as HTML
-  Parameters: {"search"=>"mocha"}
-  Rendered recipes_controller/index.html.erb within layouts/application (102.4ms)
-Completed 200 OK in 1291ms (Views: 211.6ms | ActiveRecord: 0.0ms)
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2017-04-16 21:36:58 -0500
 
 
-Started GET "/assets/recipes_controller.self-692b77ff4074cc8ca04cfb29a0b69d8c76168873b404b3bcd808aeff691747e0.css?body=1" for ::1 at 2017-03-24 16:18:27 -0500
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for ::1 at 2017-04-16 21:36:58 -0500
 
 
-Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2017-03-24 16:18:27 -0500
+Started GET "/assets/recipes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-04-16 21:36:58 -0500
 
 
-Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for ::1 at 2017-03-24 16:18:27 -0500
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for ::1 at 2017-04-16 21:36:58 -0500
 
 
-Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2017-03-24 16:18:27 -0500
+Started GET "/" for ::1 at 2017-04-16 21:37:16 -0500
+Processing by RecipesController#index as HTML
+  Rendered recipes/index.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 961ms (Views: 15.4ms | ActiveRecord: 0.0ms)
 
 
-Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for ::1 at 2017-03-24 16:18:27 -0500
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2017-04-16 21:37:17 -0500
 
 
-Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for ::1 at 2017-03-24 16:18:27 -0500
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for ::1 at 2017-04-16 21:37:17 -0500
 
 
-Started GET "/assets/recipes_controller.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-03-24 16:18:27 -0500
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for ::1 at 2017-04-16 21:37:17 -0500
 
 
-Started GET "/" for ::1 at 2017-03-24 16:18:29 -0500
-Processing by RecipesControllerController#index as HTML
-  Rendered recipes_controller/index.html.erb within layouts/application (52.2ms)
-Completed 200 OK in 1502ms (Views: 114.5ms | ActiveRecord: 0.0ms)
+Started GET "/assets/recipes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-04-16 21:37:17 -0500
 
 
-Started GET "/" for ::1 at 2017-03-24 16:18:31 -0500
-Processing by RecipesControllerController#index as HTML
-  Rendered recipes_controller/index.html.erb within layouts/application (66.8ms)
-Completed 200 OK in 981ms (Views: 284.4ms | ActiveRecord: 0.0ms)
+Started GET "/assets/recipes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-04-16 21:37:17 -0500
 
 
-Started GET "/" for ::1 at 2017-03-24 16:18:32 -0500
-Processing by RecipesControllerController#index as HTML
-  Rendered recipes_controller/index.html.erb within layouts/application (38.2ms)
-Completed 200 OK in 871ms (Views: 89.4ms | ActiveRecord: 0.0ms)
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for ::1 at 2017-04-16 21:37:17 -0500
 
 
-Started GET "/" for ::1 at 2017-03-24 16:18:33 -0500
-Processing by RecipesControllerController#index as HTML
-  Rendered recipes_controller/index.html.erb within layouts/application (47.0ms)
-Completed 200 OK in 892ms (Views: 161.5ms | ActiveRecord: 0.0ms)
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2017-04-16 21:37:17 -0500
 
 
-Started GET "/" for ::1 at 2017-03-24 16:18:34 -0500
-Processing by RecipesControllerController#index as HTML
-  Rendered recipes_controller/index.html.erb within layouts/application (85.4ms)
-Completed 200 OK in 931ms (Views: 155.1ms | ActiveRecord: 0.0ms)
-  [1m[36m (34.6ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL) [0m
-  [1m[35m (12.1ms)[0m  CREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")
-  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Started GET "/" for ::1 at 2017-04-16 21:40:54 -0500
+Processing by RecipesController#index as HTML
+  Rendered recipes/index.html.erb within layouts/application (22.1ms)
+Completed 200 OK in 682ms (Views: 49.4ms | ActiveRecord: 0.0ms)
 
 
-Started GET "/" for ::1 at 2017-03-24 17:06:00 -0500
-Processing by RecipesControllerController#index as HTML
-  Rendered recipes_controller/index.html.erb within layouts/application (20.7ms)
-Completed 200 OK in 931ms (Views: 281.2ms | ActiveRecord: 0.0ms)
+Started GET "/assets/recipes.self-31c305102a8f7b65982d6869a541ca63a6875c50cf95dfd34df0324aed4019ae.css?body=1" for ::1 at 2017-04-16 21:40:55 -0500
 
 
-Started GET "/" for ::1 at 2017-03-24 17:06:01 -0500
-Processing by RecipesControllerController#index as HTML
-  Rendered recipes_controller/index.html.erb within layouts/application (10.1ms)
-Completed 200 OK in 764ms (Views: 37.4ms | ActiveRecord: 0.0ms)
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2017-04-16 21:40:55 -0500
 
 
-Started GET "/assets/recipes_controller.self-692b77ff4074cc8ca04cfb29a0b69d8c76168873b404b3bcd808aeff691747e0.css?body=1" for ::1 at 2017-03-24 17:06:02 -0500
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2017-04-16 21:40:55 -0500
 
 
-Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2017-03-24 17:06:02 -0500
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for ::1 at 2017-04-16 21:40:55 -0500
 
 
-Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for ::1 at 2017-03-24 17:06:02 -0500
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for ::1 at 2017-04-16 21:40:55 -0500
 
 
-Started GET "/assets/recipes_controller.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-03-24 17:06:02 -0500
+Started GET "/assets/recipes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-04-16 21:40:55 -0500
 
 
-Started GET "/" for ::1 at 2017-03-24 17:06:09 -0500
-Processing by RecipesControllerController#index as HTML
-  Rendered recipes_controller/index.html.erb within layouts/application (10.1ms)
-Completed 200 OK in 690ms (Views: 23.3ms | ActiveRecord: 0.0ms)
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for ::1 at 2017-04-16 21:40:55 -0500
+
+
+Started GET "/" for ::1 at 2017-04-16 21:42:00 -0500
+Processing by RecipesController#index as HTML
+  Rendered recipes/index.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 632ms (Views: 15.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/recipes.self-31c305102a8f7b65982d6869a541ca63a6875c50cf95dfd34df0324aed4019ae.css?body=1" for ::1 at 2017-04-16 21:42:00 -0500
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2017-04-16 21:42:00 -0500
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for ::1 at 2017-04-16 21:42:00 -0500
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for ::1 at 2017-04-16 21:42:00 -0500
+
+
+Started GET "/assets/recipes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-04-16 21:42:00 -0500
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for ::1 at 2017-04-16 21:42:00 -0500
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2017-04-16 21:42:00 -0500
+
+
+Started GET "/recipes/index?utf8=%E2%9C%93&search=&commit=Search" for ::1 at 2017-04-16 21:42:10 -0500
+Processing by RecipesController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"", "commit"=>"Search"}
+  Rendered recipes/index.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 971ms (Views: 19.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-04-16 21:42:13 -0500
+Processing by RecipesController#index as HTML
+  Rendered recipes/index.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 661ms (Views: 20.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-04-16 21:44:41 -0500
+Processing by RecipesController#index as HTML
+  Rendered recipes/index.html.erb within layouts/application (9.3ms)
+Completed 200 OK in 655ms (Views: 18.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/recipes.self-31c305102a8f7b65982d6869a541ca63a6875c50cf95dfd34df0324aed4019ae.css?body=1" for ::1 at 2017-04-16 21:44:41 -0500
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2017-04-16 21:44:41 -0500
+
+
+Started GET "/assets/recipes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-04-16 21:44:41 -0500
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for ::1 at 2017-04-16 21:44:41 -0500
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for ::1 at 2017-04-16 21:44:41 -0500
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2017-04-16 21:44:41 -0500
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for ::1 at 2017-04-16 21:44:41 -0500
+
+
+Started GET "/recipes/index?utf8=%E2%9C%93&search=cheese&commit=Search" for ::1 at 2017-04-16 21:44:45 -0500
+Processing by RecipesController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"cheese", "commit"=>"Search"}
+  Rendered recipes/index.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 638ms (Views: 12.9ms | ActiveRecord: 0.0ms)
